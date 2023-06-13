@@ -1,0 +1,74 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>eye.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\background.png" />
+    <None Remove="Assets\Block-Empty.png" />
+    <None Remove="Assets\Block-I.png" />
+    <None Remove="Assets\Block-J.png" />
+    <None Remove="Assets\Block-L.png" />
+    <None Remove="Assets\Block-O.png" />
+    <None Remove="Assets\Block-S.png" />
+    <None Remove="Assets\Block-T.png" />
+    <None Remove="Assets\Block-Z.png" />
+    <None Remove="Assets\eye.png" />
+    <None Remove="Assets\grid.png" />
+    <None Remove="Assets\ring.png" />
+    <None Remove="Assets\ring1.png" />
+    <None Remove="Assets\ring2.png" />
+    <None Remove="Assets\ring3.png" />
+    <None Remove="Assets\ring4.png" />
+    <None Remove="Assets\ring5.png" />
+    <None Remove="Assets\ring6.png" />
+    <None Remove="Assets\text.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="eye.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\background.png" />
+    <Resource Include="Assets\Block-Empty.png" />
+    <Resource Include="Assets\Block-I.png" />
+    <Resource Include="Assets\Block-J.png" />
+    <Resource Include="Assets\Block-L.png" />
+    <Resource Include="Assets\Block-O.png" />
+    <Resource Include="Assets\Block-S.png" />
+    <Resource Include="Assets\Block-T.png" />
+    <Resource Include="Assets\Block-Z.png" />
+    <Resource Include="Assets\eye.png" />
+    <Resource Include="Assets\grid.png" />
+    <Resource Include="Assets\ring.png" />
+    <Resource Include="Assets\ring1.png" />
+    <Resource Include="Assets\ring2.png" />
+    <Resource Include="Assets\ring3.png" />
+    <Resource Include="Assets\ring4.png" />
+    <Resource Include="Assets\ring5.png" />
+    <Resource Include="Assets\ring6.png" />
+    <Resource Include="Assets\text.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
